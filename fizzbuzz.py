@@ -4,6 +4,7 @@
 
 def fizzbuzz(number):
     """
+    For a given number > 0:
     Return:
         - u"fizz" if number is diviable by 3.
         - u"bizz" if number is diviable by 5.
