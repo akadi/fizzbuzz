@@ -2,7 +2,7 @@
 # Author(s): Abdelhalim Kadi <kadi.halim@gmail.com>
 #FizzBuzz function
 
-def fizzbuzz(number):
+def fizz_buzz(number):
     """
     For a given number > 0:
     Return:
@@ -14,18 +14,14 @@ def fizzbuzz(number):
     fizz = number % 3
     buzz = number % 5
     fizzbuzz = number % 15
-
     if not fizzbuzz:
         #is deviable by 15
         return u"fizzbuzz"
-
     if not buzz:
         #is diviable by 5
         return u"bizz"
-
     if not fizz:
         #is diviable by 3
         return u"fizz"
-
     else:
         return number

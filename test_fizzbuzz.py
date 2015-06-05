@@ -1,10 +1,10 @@
 #Test fizzbuzz function
 #See http://content.codersdojo.org/code-kata-catalogue/fizz-buzz
 #For lanch test:
-#$python test_fizzbuzz
+#$python test_fizzbuzz.py
 
 import unittest
-from fizzbuzz import fizzbuzz
+from fizzbuzz import fizz_buzz
 
 class TestFizzBuzz(unittest.TestCase):
     """ Class for test get Fizz Buzz"""
@@ -12,15 +12,15 @@ class TestFizzBuzz(unittest.TestCase):
         """
         Test FizzBuzz function
         """
-        self.assertEqual(fizzbuzz(1), 1)
-        self.assertEqual(fizzbuzz(2), 2)
-        self.assertEqual(fizzbuzz(3), u"fizz")
-        self.assertEqual(fizzbuzz(4), 4)
-        self.assertEqual(fizzbuzz(5), u"bizz")
-        self.assertEqual(fizzbuzz(15), u"fizzbuzz")
-        self.assertEqual(fizzbuzz(20), u"bizz")
-        self.assertEqual(fizzbuzz(21), u"fizz")
-        self.assertEqual(fizzbuzz(45), u"fizzbuzz")
+        self.assertEqual(fizz_buzz(1), 1)
+        self.assertEqual(fizz_buzz(2), 2)
+        self.assertEqual(fizz_buzz(3), u"fizz")
+        self.assertEqual(fizz_buzz(4), 4)
+        self.assertEqual(fizz_buzz(5), u"bizz")
+        self.assertEqual(fizz_buzz(15), u"fizzbuzz")
+        self.assertEqual(fizz_buzz(20), u"bizz")
+        self.assertEqual(fizz_buzz(21), u"fizz")
+        self.assertEqual(fizz_buzz(45), u"fizzbuzz")
 
 if __name__ == '__main__':
     unittest.main()
